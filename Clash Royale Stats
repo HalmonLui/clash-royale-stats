@@ -1,0 +1,480 @@
+<!DOCTYPE HTML>
+<html lang = "en-US">
+<html style = "background-color: #3a7ce8; margin: 0; border: 0; padding: 0;">
+<title>Clash Royale Stats</title>
+<head>
+	<!-Favicon here->
+	<link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACxBwAAryEAAK8bAACzAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALEhAACvowAArvIAAKj/AACo/wAAq+UAALGCAAC4CwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKw/AACq8AAAqOkAAKeoAACmqwAAoJsAAKSPAACp6AAAsdIAAL0XAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKoaAACl7AAAo8cAAKGlAACf+wAAn/8AAKH/AACc8gAAom4AAKraAAC2vgAAwgIAAAAAAAAAAAAAAAAAAAAAAAChjgAAnvUAAJyhAACa/wAAmf8AAJj/AACa/wAAnP8AAJr6AACjfwAArv8AALpIAAAAAAAAAAAAAAAAAAAAAAAAnt0AAJuzAACY8wAAlf8AAJT/AACT/wAAlP8AAJX/AACb/gAAm7YAAKbYAACxogAAvgAAAAAAAAAAAAAAAAAAAJz8AACZoQAAlf8AAJL/AACQ/wAAjv8AAI7/AACQ/wAAlKYAAJuOAACeYwAAp8UAALGyAAC7CQAAAAAAAAAAAACc7wAAmZwAAJX2AACR/wAAjv8AAIz/AACL/QAAi/8AAI/TAACVYwAAnDMAAKA/AACpwgAAsmcAAAAAAAAAAAAAoLQAAJzmAACZnAAAlf8AAJH/AACO/wAAjZ4AAIycAACP5AAAk6cAAJhMAACejQAAob4AAKldAAAAAAAAAAAAAKVGAACi/gAAn7UAAJuiAACX/AAAk/8AAJH+AACPnwAAkUsAAJRkAACYfQAAnXMAAKKRAACnlAAAqEwAAAAAAACuAAAAqpIAAKj/AACjjwAAn2sAAJqLAACWyQAAk/8AAJR+AACWSwAAmUoAAJ1LAAChgQAAqAAAAKuKAACsEAAAAAAAALYCAACyfAAArKQAAKcPAAChMQAAnIwAAJfPAACXoQAAmcIAAJumAACe4AAAobUAAKQkAACpRgAAr0oAAAAAAAAAAAAAwgAAALdhAACvwgAAqbkAAKLKAACckwAAm7AAAJynAACdjwAAn4MAAKHdAACktQAAqHQAAK6HAAAAAAAAAAAAAAAAAAAAAAAAuQAAALAFAACpPAAAoeIAAKBvAACgcgAAoP0AAKGTAACjegAApXwAAKikAACuWwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKc9AACkygAApOUAAKPyAACkiQAApd0AAKZcAACohwAArlEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqgAAAKgSAACmHwAApgEAAKcFAAC5AAAAAAAAAAAA8P8AAMA/AACAHwAAAA8AAAAPAAAABwAAAAMAAAADAAAAAwAAAAEAAAAAAACAAAAAwAAAAPAAAAD+AAAA/wMAAA==" rel="icon" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+<style>
+	.Menu{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: lightblue;
+		border: none;
+		border-top-left-radius: 10px;		
+		border-top-right-radius: 10px;
+		top: 0;
+		width: 100%;
+	}
+	.Menunormal{
+		float: left;
+		border-right: 1px solid #bbb;
+	}
+	.menua{
+		display: block;
+		color: black;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-family: Century Gothic, sans-serif;
+	}
+	.menua:hover{
+		background-color: blue;
+		color: white;
+	}
+	#Searchbar{
+		font-size: 16px;
+		float: right;
+		width: 300px;
+		padding: 15px;
+		box-sizing: border-box;
+		border: none;
+		border-top-right-radius: 10px;
+		background-image: url("https://images.vexels.com/media/users/3/132068/isolated/preview/f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png");
+		background-repeat: no-repeat;
+		background-size: 30px 30px;
+		background-position: 10px 10px;
+		padding-left: 40px;
+	}
+	
+	}
+	.active{
+		background-color: purple;
+	}
+	.Menudrop:hover .LeaderboardDrop{
+		display: block;
+	}
+	.Menudrop:hover .LeaderboardDrop a:hover{
+		background-color: #0055dd;
+	}
+	.LeaderboardDrop{
+		display: none;
+		position: absolute;
+		background-color: white;
+		color: white;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		font-family: Century Gothic, sans-serif;
+	}
+	.LeaderboardDrop a{
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
+	li.Menudrop{
+		display: inline-block;
+		float: left;
+		border-right: 1px solid #bbb;
+	}
+	li a, .dropbtn{
+		display: inline-block;
+		color: black;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-family: Century Gothic, sans-serif;
+	}
+	li a:hover, .Menudrop:hover .dropbtn{
+		background-color: blue;
+	}
+	#title{
+		text-align: center;
+		display: none;
+		
+	}
+	#support{
+		text-align: center;
+		font-family: Tahoma, Geneva, sans-serif;
+		font-weight: bold;
+		text-shadow: 1px 1px white;
+		font-size: x-large;
+		position: absolute;
+		top: 40px;
+	}
+	.headerbackground{
+		height: 250px;
+		width: 100%;
+		background-image: url("http://i.imgur.com/oStZYT8.jpg");
+		background-size: 100% 400px;
+		border: 1px solid gray;
+		border-radius: 10px;		
+	}	
+
+	.bodytitle{
+		font-family: Century Gothic, sans-serif;
+		font-weight: bold;
+		font-size: 40px;
+		color: black;
+		text-decoration: none;
+		text-align: center;
+	}
+	
+	.body1{
+		background-color: lightblue;
+		border: 1px solid gray;
+		border-radius: 10px;
+		padding: 0px;
+	}
+	
+	.tabletable{
+		width: 70%;
+		margin-left: 100px;
+		margin-right: 100px;
+		font-family: Century Gothic, sans-serif;
+		padding: 10px;
+		border-collapse: separate;
+		border-spacing: 50px 0;
+	}
+	.tabletable .tabletd{
+		padding: 1px 40px;
+	}
+	
+	.LegendTableBody{
+		text-align: center;
+		display: block;
+		float: left;
+		padding: 5px;
+		background-color: lightblue;
+		box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2), -1px -1px 16px 0px rgba(0,0,0,0.2);
+		background-size: 100px 400px;
+		width: 300px;
+	}
+	.LegendTable{
+		width: 100%;
+	}
+	.LegendTable tr{
+		color: black;
+		background-color: #becde5;
+		background-size: 100% 100%;
+
+	}
+	.MoreLegend{
+		display: block;
+		background-color: #669ff9;
+	}
+	.PlayerTableBody{
+		text-align: center;
+		display: block;
+		float: left;
+		padding: 5px;
+		background-color: lightblue;
+		box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2), -1px -1px 16px 0px rgba(0,0,0,0.2);
+		background-size: 100px 400px;
+		width: 300px;
+	}
+	.PlayerTable{
+		width: 100%;
+	}
+	.PlayerTable tr{
+		color: black;
+		background-color: #becde5;
+		background-size: 100% 100%;
+	}
+	.ClanTableBody{
+		text-align: center;
+		display: block;
+		float: left;
+		padding: 5px;
+		background-color: lightblue;
+		box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2), -1px -1px 16px 0px rgba(0,0,0,0.2);
+		background-size: 100px 400px;
+		width: 300px;
+	}
+	.ClanTable{
+		width: 100%;
+	}
+	.ClanTable tr{
+		color: black;
+		background-color: #becde5;
+		background-size: 100% 100%;
+	}
+	.page-footer{
+		color: black;
+		width: 99%;
+		background-color: lightblue;
+		font-size: small;
+		border: 1px solid gray;
+		border-radius: 10px;
+		margin-top: 25px;		
+		position: absolute;
+		bottom: 0;
+		font-family: Tahoma, Geneva, sans-serif;
+	}
+</style>
+
+</head>
+<nav>
+
+</nav>
+
+<body>
+<article id="article1">
+<div class="headerbackground">
+	<ul class = "Menu">
+		<li class = "Menunormal">
+				<a href="" class="menua">Card Statistics</a>
+		</li>
+		<li class = "Menudrop">
+				<a href="" class="dropbtn">Leaderboards &#709</a>
+				<div class="LeaderboardDrop">
+					<a href="">Players</a>
+					<a href="">Clans</a>
+					<a href="">Arenas</a>
+				</div>
+		</li>
+		<li class = "Menunormal">
+				<a href="" class="menua">Guides</a>
+		</li>
+		<li class = "Menunormal">
+				<a href="" class="menua">Youtubers</a>
+		</li>
+		<li class = "Menunormal">
+				<a href="" class="menua">About</a>
+		</li>
+		<li class = "Searchbar">
+			<input type = "search" id = "Searchbar" placeholder = "Clan, Player, Card, Youtuber" autocomplete="off"/>
+		</li>
+	</ul>
+	<h1 id="title">Clash Royale Stats</h1>
+	<p id="support">Supporting 9001 Players, 9001 Clans, from 9001 Regions</p>
+</article>
+</div>
+
+<article id="article2">
+<div class="body1">
+		<h1 class="bodytitle">Trophies Rankings</h1>
+<table class="tabletable">
+<tr>
+<td class="tabletd">
+<!-Table for Legend Ranking->
+		<div class="LegendTableBody">
+		<h4 class="LegendTitle">Legend Trophy Rankings</h4>
+		<table class="LegendTable">
+			<tr>
+				<td class="rank">
+					<p>1</p>
+				</td>
+				<td class="name">
+					<div class="name">Name1</div>
+				</td>
+				<td class="trophieslegend">
+					<span>1234</span>
+				</td>
+				<td class="view-details">
+					<a href="www.google.com">
+						<i class="material-icons">keyboard_arrow_right</i>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="rank">
+					<p>2</p>
+				</td>
+				<td class="name">
+					<div class="name">Name2</div>
+				</td>
+				<td class="trophieslegend">
+					<span>1234</span>
+				</td>
+				<td class="view-details">
+					<a href="www.google.com">
+						<i class="material-icons">keyboard_arrow_right</i>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="rank">
+					<p>3</p>
+				</td>
+				<td class="name">
+					<div class="name">Name3</div>
+				</td>
+				<td class="trophieslegend">
+					<span>1234</span>
+				</td>
+				<td class="view-details">
+					<a href="www.google.com">
+						<i class="material-icons">keyboard_arrow_right</i>
+					</a>
+				</td>
+			</tr>			
+		</table>
+		<a href="" class="MoreLegend">
+			More Rankings
+			<i class="material-icons">keyboard_arrow_right</i>
+			</a>
+		</div>
+</td>
+<td class="tabletd">
+<!-Table for Player Ranking->
+		<div class="PlayerTableBody">
+		<h4 class="PlayerTitle">Player Trophy Rankings</h4>
+		<table class="PlayerTable">
+			<tr>
+				<td class="rank">
+					<p>1</p>
+				</td>
+				<td class="name">
+					<div class="name">Name1</div>
+				</td>
+				<td class="trophiesplayer">
+					<span>1234</span>
+				</td>
+				<td class="view-details">
+					<a href="www.google.com">
+						<i class="material-icons">keyboard_arrow_right</i>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="rank">
+					<p>2</p>
+				</td>
+				<td class="name">
+					<div class="name">Name2</div>
+				</td>
+				<td class="trophiesplayer">
+					<span>1234</span>
+				</td>
+				<td class="view-details">
+					<a href="www.google.com">
+						<i class="material-icons">keyboard_arrow_right</i>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="rank">
+					<p>3</p>
+				</td>
+				<td class="name">
+					<div class="name">Name3</div>
+				</td>
+				<td class="trophiesplayer">
+					<span>1234</span>
+				</td>
+				<td class="view-details">
+					<a href="www.google.com">
+						<i class="material-icons">keyboard_arrow_right</i>
+					</a>
+				</td>
+			</tr>			
+		</table>
+		<a href="" class="MoreLegend">
+			More Rankings
+			<i class="material-icons">keyboard_arrow_right</i>
+			</a>
+		</div>
+	</article>
+	</div>
+</td>
+<td class="tabletd">
+<!-Table for Clans Ranking->
+		<div class="ClanTableBody">
+		<h4 class="PlayerTitle">Player Clans Rankings</h4>
+		<table class="ClanTable">
+			<tr>
+				<td class="rank">
+					<p>1</p>
+				</td>
+				<td class="name">
+					<div class="name">Name1</div>
+				</td>
+				<td class="trophiesplayer">
+					<span>1234</span>
+				</td>
+				<td class="view-details">
+					<a href="www.google.com">
+						<i class="material-icons">keyboard_arrow_right</i>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="rank">
+					<p>2</p>
+				</td>
+				<td class="name">
+					<div class="name">Name2</div>
+				</td>
+				<td class="trophiesplayer">
+					<span>1234</span>
+				</td>
+				<td class="view-details">
+					<a href="www.google.com">
+						<i class="material-icons">keyboard_arrow_right</i>
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="rank">
+					<p>3</p>
+				</td>
+				<td class="name">
+					<div class="name">Name3</div>
+				</td>
+				<td class="trophiesplayer">
+					<span>1234</span>
+				</td>
+				<td class="view-details">
+					<a href="www.google.com">
+						<i class="material-icons">keyboard_arrow_right</i>
+					</a>
+				</td>
+			</tr>			
+		</table>
+		<a href="" class="MoreLegend">
+			More Rankings
+			<i class="material-icons">keyboard_arrow_right</i>
+			</a>
+		</div>
+	</article>
+	</div>
+</td>
+</tr>
+</table>
+</body>
+
+
+<footer class = "page-footer">
+	<table class = "footer-table">
+		<tr>
+			<td>
+				<p>
+				© 2017 Halmon Lui - Terms of Service and Privacy Policy - This content is not affiliated with, endorsed, sponsored, or specifically approved by Supercell and Supercell is not responsible for it. 
+				For more information see Supercell’s <a href="https://www.supercell.com/fan-content-policy">Fan Content Policy</a>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>
+				Website was last updated on 2/15/2017 by Halmon Lui
+				</p>
+			</td>
+		</tr>	
+	</table>
+
+</footer>
+
+
+
+
+
+
+</html>
