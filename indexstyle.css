@@ -1,3 +1,20 @@
+/*Nav Bar*/
+	#homepage{
+		height: 50px;
+		width: 45px;
+		float: left;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	#homepage:hover{
+		background-color: blue;
+	}
+	.homepagea{
+		margin: none;
+		font-size: 0px;
+		padding: 0px;
+		float: left;
+	}
 	.Menu{
 		list-style-type: none;
 		margin: 0;
@@ -41,10 +58,7 @@
 		padding-left: 40px;
 	}
 	
-	}
-	.active{
-		background-color: purple;
-	}
+
 	.Menudrop:hover .LeaderboardDrop{
 		display: block;
 	}
@@ -81,6 +95,7 @@
 		text-decoration: none;
 		font-family: Century Gothic, sans-serif;
 	}
+
 	li a:hover, .Menudrop:hover .dropbtn{
 		background-color: blue;
 	}
@@ -120,7 +135,7 @@
 		background-color: lightblue;
 		border: 1px solid gray;
 		border-radius: 10px;
-		padding: 0px;
+		padding-bottom: 40px;
 		margin-top: 5px;
 		margin-bottom: 5px;
 	}
@@ -148,7 +163,7 @@
 		border-spacing: 50px 0;
 	}
 	.tabletable .tabletd{
-		padding: 1px 40px;
+		padding: 1px 10px;
 	}
 	
 	.LegendTableBody{
@@ -225,7 +240,7 @@
 		font-size: small;
 		border: 1px solid gray;
 		border-radius: 10px;
-		margin-top: 25px;		
+		margin-top: 6px;		
 		position: static;
 		bottom: 0;
 		font-family: Tahoma, Geneva, sans-serif;
