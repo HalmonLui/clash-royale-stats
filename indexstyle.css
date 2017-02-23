@@ -142,10 +142,24 @@
 		border: 1px solid gray;
 		border-radius: 10px;
 		padding: 0px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		display: block;
+	}
+	
+	.body3{
+		background-color: lightblue;
+		border: 1px solid gray;
+		border-radius: 10px;
+		padding: 0px;
 		margin: 1px;
 		display: block;
 	}
 	
+	#article4{
+		margin: 10px;
+		display: block;
+	}
 	#article3{
 		margin: 10px;
 		display: block;
@@ -230,6 +244,13 @@
 	}
 	.changelog{
 		font-family: Tahoma, Geneva, sans-serif;
+	}
+	
+	.crstats{
+		font-family: Tahoma, Geneva, sans-serif;
+	}
+	.changelogn{
+		display:none;
 	}
 	.page-footer{
 		color: black;

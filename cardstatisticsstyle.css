@@ -99,3 +99,87 @@
 	li a:hover, .Menudrop:hover .dropbtn{
 		background-color: blue;
 	}
+	
+	#article2{
+		background-color: lightblue;
+		color: black;
+		border: 1px solid gray;
+		border-radius: 10px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		font-family: Century Gothic, sans-serif;
+		padding: 5px;
+	}
+	#article2 h2{
+		margin: 5px;
+	}
+	
+	.commons{
+		background-color: white;
+		margin: 5px;
+		box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2), -1px -1px 16px 0px rgba(0,0,0,0.2);
+		padding: 10px;
+		border: 1px solid gray;
+		border-radius: 10px;
+		text-align: center;
+	}
+	.commons p{
+		margin: 0px;
+	}
+	.commons td{
+		width: 100px;
+		border: none;
+		border-radius: 10px;
+	}
+	.commons img{
+		padding-left: 22px;
+		padding-right: 22px;
+	}
+	.commons td:hover{
+		background-color: blue;
+		color: white;
+	}
+	#article3{
+		background-color: orange;
+		color: black;
+		border: none;
+		border-radius: 10px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		font-family: Century Gothic, sans-serif;
+	}
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	.page-footer{
+		color: black;
+		width: 100%;
+		background-color: lightblue;
+		font-size: small;
+		border: 1px solid gray;
+		border-radius: 10px;
+		margin-top: 6px;		
+		position: static;
+		bottom: 0;
+		font-family: Tahoma, Geneva, sans-serif;
+	}
