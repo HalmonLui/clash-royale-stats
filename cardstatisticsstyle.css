@@ -99,7 +99,107 @@
 	li a:hover, .Menudrop:hover .dropbtn{
 		background-color: blue;
 	}
+	#article1 h1{
+		background-color: lightblue;
+		font-family: Century Gothic, sans-serif;
+		margin-top: 0px;
+		margin-bottom: 5px;
+		border-bottom: 1px solid gray;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		padding: 5px;
+		
+	}
 	
+	#rarity{
+		background-color: lightblue;
+		color: black;
+		border: 1px solid gray;
+		border-radius: 10px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		font-family: Century Gothic, sans-serif;
+		padding: 5px;
+	}
+	#commontab{
+		width: 100px;
+		height: 40px;
+		font-family: Century Gothic, sans-serif;
+		border: 1px solid gray;
+		border-radius: 10px;
+		background-color: white;
+		font-weight: bold;
+		box-shadow: 1px 4px 4px 1px rgba(0,0,0,0.2);
+	}
+	#commontab:hover{
+		cursor: pointer;
+		border: 2px solid black;
+	}
+	#commontab:active{
+		background-color: white;
+		color: gray;
+		border: 1px solid black;
+	}
+	#raretab{
+		width: 100px;
+		height: 40px;
+		font-family: Century Gothic, sans-serif;
+		border: 1px solid gray;
+		border-radius: 10px;
+		background-color: orange;
+		font-weight: bold;
+		box-shadow: 1px 4px 4px 1px rgba(0,0,0,0.2);
+	}
+	#raretab:hover{
+		cursor: pointer;
+		border: 2px solid black;
+	}
+	#raretab:active{
+		background-color: white;
+		color: gray;
+		border: 1px solid black;
+	}
+	#epictab{
+		width: 100px;
+		height: 40px;
+		font-family: Century Gothic, sans-serif;
+		border: 1px solid gray;
+		border-radius: 10px;
+		background-color: purple;
+		font-weight: bold;
+		box-shadow: 1px 4px 4px 1px rgba(0,0,0,0.2);
+	}
+	#epictab:hover{
+		cursor: pointer;
+		border: 2px solid black;
+	}
+	#epictab:active{
+		background-color: white;
+		color: gray;
+		border: 1px solid black;
+	}
+	#legendarytab{
+		width: 100px;
+		height: 40px;
+		font-family: Century Gothic, sans-serif;
+		border: 1px solid gray;
+		border-radius: 10px;
+		background-color: white;
+		font-weight: bold;
+		box-shadow: 1px 4px 4px 1px rgba(0,0,0,0.2);
+		background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+	}
+	#legendarytab:hover{
+		cursor: pointer;
+		border: 2px solid black;
+	}
+	#legendarytab:active{
+		background-color: white;
+		color: gray;
+		border: 1px solid black;
+		background: white;
+	}
+
 	#article2{
 		background-color: lightblue;
 		color: black;
@@ -122,6 +222,7 @@
 		border: 1px solid gray;
 		border-radius: 10px;
 		text-align: center;
+		z-index: 1;
 	}
 	.commons p{
 		margin: 0px;
