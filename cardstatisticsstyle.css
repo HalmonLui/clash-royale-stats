@@ -165,7 +165,7 @@
 		font-family: Century Gothic, sans-serif;
 		border: 1px solid gray;
 		border-radius: 10px;
-		background-color: purple;
+		background-color: #e210ed;
 		font-weight: bold;
 		box-shadow: 1px 4px 4px 1px rgba(0,0,0,0.2);
 	}
@@ -184,10 +184,8 @@
 		font-family: Century Gothic, sans-serif;
 		border: 1px solid gray;
 		border-radius: 10px;
-		background-color: white;
 		font-weight: bold;
-		box-shadow: 1px 4px 4px 1px rgba(0,0,0,0.2);
-		background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+		box-shadow: 1px 4px 4px 1px rgba(0,0,0,0.2); 
 	}
 	#legendarytab:hover{
 		cursor: pointer;
@@ -211,6 +209,16 @@
 		padding: 5px;
 	}
 	#article2 h2{
+		margin: 5px;
+	}
+	#article3 h2{
+		margin: 5px;
+	}
+	
+	#article4 h2{
+		margin: 5px;
+	}
+	#article5 h2{
 		margin: 5px;
 	}
 	
@@ -237,25 +245,138 @@
 		padding-right: 22px;
 	}
 	.commons td:hover{
-		background-color: blue;
+		background-color: #09bdef;
 		color: white;
 	}
 	#article3{
-		background-color: orange;
+		background-color: lightblue;
 		color: black;
 		border: none;
 		border-radius: 10px;
 		margin-top: 5px;
 		margin-bottom: 5px;
 		font-family: Century Gothic, sans-serif;
+		padding: 5px;
 	}
 	
+	#article3 table{
+		background-color: white; 
+		border: 1px solid orange;		
+	}
+	
+	.rares{
+		background-color: white;
+		margin: 5px;
+		box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2), -1px -1px 16px 0px rgba(0,0,0,0.2);
+		padding: 10px;
+		border: 1px solid gray;
+		border-radius: 10px;
+		text-align: center;
+		z-index: 1;
+	}
+	
+	.rares p{
+		margin: 0px;
+	}
+	.rares td{
+		width: 100px;
+		border: none;
+		border-radius: 10px;
+	}
+	.rares img{
+		padding-left: 22px;
+		padding-right: 22px;
+	}
+	.rares td:hover{
+		background-color: #09bdef;
+		color: white;
+	}
 
+	#article4{
+		background-color: lightblue;
+		color: black;
+		border: none;
+		border-radius: 10px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		font-family: Century Gothic, sans-serif;
+		padding: 5px;
+	}
+	#article4 table{
+		background-color: white; 
+		border: 1px solid purple;		
+	}
 	
+	.epics{
+		background-color: white;
+		margin: 5px;
+		box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2), -1px -1px 16px 0px rgba(0,0,0,0.2);
+		padding: 10px;
+		border: 1px solid gray;
+		border-radius: 10px;
+		text-align: center;
+		z-index: 1;
+	}
 	
+	.epics p{
+		margin: 0px;
+	}
+	.epics td{
+		width: 100px;
+		border: none;
+		border-radius: 10px;
+	}
+	.epics img{
+		padding-left: 22px;
+		padding-right: 22px;
+	}
+	.epics td:hover{
+		background-color: #09bdef;
+		color: white;
+	}
+
+	#article5{
+		background-color: lightblue;
+		color: black;
+		border: none;
+		border-radius: 10px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		font-family: Century Gothic, sans-serif;
+		padding: 5px;
+	}
+	#article5 table{
+		background-color: white; 
+		border: 1px solid black;		
+	}
 	
+	.legends{
+		background-color: white;
+		margin: 5px;
+		box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2), -1px -1px 16px 0px rgba(0,0,0,0.2);
+		padding: 10px;
+		border: 1px solid gray;
+		border-radius: 10px;
+		text-align: center;
+		z-index: 1;
+	}
 	
-	
+	.legends p{
+		margin: 0px;
+	}
+	.legends td{
+		width: 100px;
+		border: none;
+		border-radius: 10px;
+	}
+	.legends img{
+		padding-left: 22px;
+		padding-right: 22px;
+	}
+	.legends td:hover{
+		background-color: #09bdef;
+		color: white;
+	}
 	
 	
 	
