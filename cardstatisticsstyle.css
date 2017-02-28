@@ -200,30 +200,37 @@
 
 	#article2{
 		background-color: lightblue;
-		color: black;
+		color: white;
 		border: 1px solid gray;
 		border-radius: 10px;
 		margin-top: 5px;
 		margin-bottom: 5px;
 		font-family: Century Gothic, sans-serif;
 		padding: 5px;
+		background-image: url("http://i.imgur.com/FlCF3d7.jpg");
+		background-size: 100% 100%;
+
 	}
 	#article2 h2{
 		margin: 5px;
+		text-shadow: 1px 1px black;
 	}
 	#article3 h2{
 		margin: 5px;
+		text-shadow: 1px 1px black;
 	}
 	
 	#article4 h2{
 		margin: 5px;
+		text-shadow: 1px 1px black;
 	}
 	#article5 h2{
 		margin: 5px;
+		text-shadow: 1px 1px black;
 	}
 	
 	.commons{
-		background-color: white;
+		background-color: rgba(255,255,255,.5);
 		margin: 5px;
 		box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2), -1px -1px 16px 0px rgba(0,0,0,0.2);
 		padding: 10px;
@@ -231,9 +238,11 @@
 		border-radius: 10px;
 		text-align: center;
 		z-index: 1;
+		
 	}
 	.commons p{
 		margin: 0px;
+		color: black;
 	}
 	.commons td{
 		width: 100px;
@@ -250,26 +259,25 @@
 	}
 	#article3{
 		background-color: lightblue;
-		color: black;
+		color: white;
 		border: none;
 		border-radius: 10px;
 		margin-top: 5px;
 		margin-bottom: 5px;
 		font-family: Century Gothic, sans-serif;
 		padding: 5px;
-	}
-	
-	#article3 table{
-		background-color: white; 
-		border: 1px solid orange;		
+		background-image: url("http://clashroyalearena.com/wp-content/uploads/2016/08/clash-royale-wallpaper-1.jpg");
+		background-size: 100% 120%;
+		
+
 	}
 	
 	.rares{
-		background-color: white;
+		background-color: rgba(255,153,0,0.5);
 		margin: 5px;
 		box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2), -1px -1px 16px 0px rgba(0,0,0,0.2);
 		padding: 10px;
-		border: 1px solid gray;
+		border: 1px solid orange;
 		border-radius: 10px;
 		text-align: center;
 		z-index: 1;
@@ -277,6 +285,7 @@
 	
 	.rares p{
 		margin: 0px;
+		color: white;
 	}
 	.rares td{
 		width: 100px;
@@ -294,25 +303,23 @@
 
 	#article4{
 		background-color: lightblue;
-		color: black;
+		color: white;
 		border: none;
 		border-radius: 10px;
 		margin-top: 5px;
 		margin-bottom: 5px;
 		font-family: Century Gothic, sans-serif;
 		padding: 5px;
+		background-image: url("http://fullhdpictures.com/wp-content/uploads/2015/11/New-Clash-of-Clans-Wallpaper.jpg");
+		background-size: 115% 100%;
 	}
-	#article4 table{
-		background-color: white; 
-		border: 1px solid purple;		
-	}
-	
+
 	.epics{
-		background-color: white;
+		background-color: rgba(153,51,255,.5);
 		margin: 5px;
 		box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2), -1px -1px 16px 0px rgba(0,0,0,0.2);
 		padding: 10px;
-		border: 1px solid gray;
+		border: 1px solid purple;
 		border-radius: 10px;
 		text-align: center;
 		z-index: 1;
@@ -320,6 +327,7 @@
 	
 	.epics p{
 		margin: 0px;
+		color: white;
 	}
 	.epics td{
 		width: 100px;
@@ -337,25 +345,23 @@
 
 	#article5{
 		background-color: lightblue;
-		color: black;
+		color: white;
 		border: none;
 		border-radius: 10px;
 		margin-top: 5px;
 		margin-bottom: 5px;
 		font-family: Century Gothic, sans-serif;
 		padding: 5px;
-	}
-	#article5 table{
-		background-color: white; 
-		border: 1px solid black;		
+		background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b4451647257947.5875212dc224d.jpg");
+		background-size: 140% 150%;
 	}
 	
 	.legends{
-		background-color: white;
+		background-color: rgba(255,255,255,0.5);
 		margin: 5px;
 		box-shadow: 10px 8px 16px 0px rgba(0,0,0,0.2), -1px -1px 16px 0px rgba(0,0,0,0.2);
 		padding: 10px;
-		border: 1px solid gray;
+		border: 1px solid black;
 		border-radius: 10px;
 		text-align: center;
 		z-index: 1;
@@ -363,6 +369,7 @@
 	
 	.legends p{
 		margin: 0px;
+		color: black;
 	}
 	.legends td{
 		width: 100px;
